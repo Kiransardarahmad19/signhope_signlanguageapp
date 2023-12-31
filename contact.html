@@ -26,6 +26,8 @@
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
 
+  <script src="contact-logger.js"></script>
+
 </head>
 
 <body>
@@ -92,29 +94,25 @@
   <section class="contact_section layout_padding">
     <div class="container">
       <div class="heading_container">
-        <h2>
-          Contact Us
-        </h2>
+        <h2>Contact Us</h2>
       </div>
       <div class="row">
         <div class="col-md-6">
-          <form action="">
+          <form id="contactForm">
             <div>
-              <input type="text" placeholder="Name" />
+              <input type="text" id="name" placeholder="Name" />
             </div>
             <div>
-              <input type="text" placeholder="Phone Number" />
+              <input type="text" id="phone" placeholder="Phone Number" />
             </div>
             <div>
-              <input type="email" placeholder="Email" />
+              <input type="email" id="email" placeholder="Email" />
             </div>
             <div>
-              <input type="text" class="message-box" placeholder="Message" />
+              <input type="text" id="message" class="message-box" placeholder="Message" />
             </div>
             <div class="d-flex ">
-              <button>
-                SEND
-              </button>
+              <button type="submit">SEND</button>
             </div>
           </form>
         </div>
